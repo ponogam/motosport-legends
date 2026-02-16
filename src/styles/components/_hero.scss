@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  z-index: 3;
+  padding: 200px 0 220px;
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero__title {
+  margin: 0;
+  font-size: clamp(44px, 4vw, 68px);
+  line-height: 83px;
+  font-weight: 500;
+}
+
+.hero__accent {
+  color: var(--gold);
+}
+
+.hero__actions {
+  margin-top: 100px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.hero__visual {
+  position: relative;
+  height: 520px;
+}
+
+.hero__coin {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  filter: drop-shadow(0 22px 60px rgba(0, 0, 0, 0.55));
+}
+
+.hero__coin--gold {
+  width: 520px;
+  height: 520px;
+  right: -40px;
+  bottom: -40px;
+}
+
+.hero__coin--silver {
+  width: 260px;
+  height: 260px;
+  right: 400px;
+  bottom: -13px;
+  opacity: 1;
+  z-index: 1;
+}

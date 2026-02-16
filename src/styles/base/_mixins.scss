@@ -1,0 +1,6 @@
+@mixin container {
+  width: min(var(--container), calc(100% - 80px));
+  margin-inline: auto;
+}
+
+
